@@ -1,0 +1,8 @@
+file_format: "1"
+id: xiao_one_key
+name: Xiao One Key
+type: shield
+url: https://github.com/gordonr/
+requires: [seeed_xiao]
+features:
+  - keys
