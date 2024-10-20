@@ -8,6 +8,7 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
 
         col-gpios
             = <&xiao_d 2 GPIO_ACTIVE_HIGH>
@@ -18,7 +19,7 @@
             ;
     };
 
-    default_transform: matrix_transform {
+    default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <1>;
         rows = <1>;
