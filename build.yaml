@@ -19,4 +19,4 @@
 ---
 include:
   - board: seeeduino_xiao
-    shield: hummingbird
+    shield: xiao_one_key
