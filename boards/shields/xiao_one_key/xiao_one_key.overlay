@@ -7,17 +7,17 @@
         compatible = "zmk,kscan-gpio-direct";
         label = "default_kscan";
 
-        input-gpios =
-            <&xiao_d 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&xiao_d 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&xiao_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <&xiao_d 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        input-gpios = 
+            <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&xiao_d 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&xiao_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
-        a-gpios = <&xiao_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        b-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        a-gpios = <&xiao_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        b-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         steps = <80>;
         status = "okay";
     };
